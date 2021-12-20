@@ -10,4 +10,17 @@
 
 ## Description
 
+This extension allows you to quickly create replacement orders for an existing order. All line items are set to $0 automatically and no charges are made to the customer. This allows you to send out order replacements if the first shipment did not arrive or arrived damaged.
+
 ### Details
+
+**Create a replacement support order**
+
+1. Find the order that you wish to create a replacement support order for.
+2. Choose "Create support order" from the "Order Actions" dropdown on the order edit screen.
+3. Make any edits you may need for the new replacement support order.
+4. Switch the status to "processing".
+
+![Screenshot of the order actions dropdown.](https://github.com/devpress/support-orders-for-woocommerce/raw/main/assets/order-actions.png)
+
+When a support order is created, an order note will be added to the original order and the replacement support order.
