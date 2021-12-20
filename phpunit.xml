@@ -17,7 +17,7 @@
 	</testsuites>
 	<filter>
 		<whitelist processUncoveredFilesFromWhitelist="true">
-			<file>replacement-orders-for-woocommerce.php</file>
+			<file>support-orders-for-woocommerce.php</file>
 		</whitelist>
 	</filter>
 </phpunit>

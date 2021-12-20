@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 VERSION=$1
-SLUG="replacement-orders-for-woocommerce"
+SLUG="support-orders-for-woocommerce"
 
 if [[ "" = "$VERSION" ]]; then
 	VERSION=$(sed -n "s/ \* Version:[ ]*\(.*\)/\1/p" ${SLUG}.php)

@@ -58,7 +58,7 @@ if ( empty( $bootstrap ) ) {
 require_once $tests_dir . '/includes/functions.php';
 
 tests_add_filter( 'muplugins_loaded', function () use ( $project_dir ) {
-	require_once $project_dir . '/replacement-orders-for-woocommerce.php';
+	require_once $project_dir . '/support-orders-for-woocommerce.php';
 } );
 
 // Finally, start up the WP testing environment.

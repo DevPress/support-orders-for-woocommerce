@@ -1,4 +1,4 @@
-# Replacement Orders for WooCommerce ![Testing status](https://github.com/devpress/replacement-orders-for-woocommerce/actions/workflows/php-tests.yml/badge.svg?branch=main)
+# Support Orders for WooCommerce ![Testing status](https://github.com/devpress/support-orders-for-woocommerce/actions/workflows/php-tests.yml/badge.svg?branch=main)
 
 * Requires PHP: 7.0
 * WP requires at least: 5.7
