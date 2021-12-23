@@ -20,6 +20,14 @@ jobs:
       - name: Checkout the files
         uses: actions/checkout@v2
 
+      # PHPUnit errors with latest PHP 8.X build.
+      # This specifically sets PHP version to 7.4.
+      - name: Setup PHP with tools
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+          tools: phpunit
+
       - name: Cache Composer dependencies
         uses: actions/cache@v2
         with:
