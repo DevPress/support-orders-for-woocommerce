@@ -24,7 +24,7 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '7.4'
-          tools: php-cs-fixer, phpunit
+          tools: phpunit
 
       - name: Cache Composer dependencies
         uses: actions/cache@v2
