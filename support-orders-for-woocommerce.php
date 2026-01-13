@@ -1,16 +1,17 @@
 <?php
 /**
  * Plugin Name: Support Orders for WooCommerce
- * Plugin URI: https://devpress.com
+ * Plugin URI: https://devpress.com/products/support-orders-for-woocommerce/
  * Description: Easily create WooCommerce replacement support orders from existing orders.
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author: DevPress
  * Author URI: https://devpress.com
- * Developer: Devin Price
- * Developer URI: https://devpress.com
  *
- * WC requires at least: 5.6.0
- * WC tested up to: 5.8.0
+ * Requires PHP: 8.2
+ * Requires at least: 6.4
+ *
+ * WC requires at least: 8.0.0
+ * WC tested up to: 10.4.3
  *
  * License: GNU General Public License v3.0
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -73,23 +74,21 @@ class SupportOrders {
 	 * @return mixed
 	 */
 	public function add_support_order_action( $actions ) {
-		global $post;
+		global $theorder;
 
-		if ( ! isset( $post->ID ) ) {
+		// HPOS compatibility: use $theorder global set by WooCommerce.
+		if ( ! $theorder instanceof \WC_Order ) {
 			return $actions;
 		}
 
-		$order = wc_get_order( $post->ID );
-		if ( ! $order ) {
-			return $actions;
-		}
+		$order = $theorder;
 
 		// Do not offer replacement orders from replacement orders.
 		if ( self::is_support_order( $order ) ) {
 			return $actions;
 		}
 
-		$actions['create_support_order'] = __( 'Create a support order', 'support-orders' );
+		$actions['create_support_order'] = __( 'Create a support order', 'support-orders-for-woocommerce' );
 
 		return $actions;
 	}
