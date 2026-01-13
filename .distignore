@@ -1,0 +1,13 @@
+/.git
+/.github
+/tests
+/vendor
+/bin
+/node_modules
+/.editorconfig
+/.gitignore
+/composer.json
+/composer.lock
+/phpcs.xml
+/phpunit.xml
+/update-plan.md
