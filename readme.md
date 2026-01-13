@@ -1,4 +1,4 @@
-# Support Orders for WooCommerce ![Testing status](https://github.com/devpress/support-orders-for-woocommerce/actions/workflows/php-tests.yml/badge.svg?branch=main)
+# Support Orders for WooCommerce ![Testing status](https://github.com/DevPress/support-orders-for-woocommerce/actions/workflows/php-tests.yml/badge.svg?branch=main)
 
 * Requires PHP: 8.2
 * WP requires at least: 6.4
